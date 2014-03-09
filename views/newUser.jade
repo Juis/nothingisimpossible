@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    form#cadastroUsuario(name="adduser",method="post",action="/adduser")
+        input#nome(type="text", placeholder="login", name="login")
+        input#senha(type="password", placeholder="senha", name="senha")
+        button#submit(type="submit") submit
